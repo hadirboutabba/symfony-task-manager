@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Task Manager{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fc;
+            padding: 2rem;
+            color: #2c3e50;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            color: #34495e;
+        }
+
+        p.description {
+            font-size: 1.1rem;
+            color: #5d6d7e;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #1c5980;
+        }
+
+        ul.task-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul.task-list li {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        form {
+            max-width: 500px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        button.btn-submit {
+            background-color: #27ae60;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button.btn-submit:hover {
+            background-color: #1e8449;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #555;
+        }
+        .back-link:hover {
+            color: #000;
+        }
+        .btn-edit {
+    background-color: #f39c12;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #d87e04;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+    </style>
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>
